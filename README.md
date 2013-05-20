@@ -1,4 +1,6 @@
 rosumi-example
 ==============
 
-Example usage of the Rosumi gem.
+This project demonstrates the usage of the Rosumi gem.
+
+
