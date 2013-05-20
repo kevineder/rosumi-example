@@ -30,6 +30,7 @@ task :get_device_ids do
 
 end
 
+#Find the specified device.
 task :locate_device, :id do |t, args|
 
   unless args[:id]
@@ -50,6 +51,7 @@ task :locate_device, :id do |t, args|
 
 end
 
+#Send a message to the specified device.
 task :message_device, :id, :subject, :message, :sound do |t, args|
 
   @@rosumi.send_message(args[:id].to_i, args[:subject], args[:message], args[:sound])
