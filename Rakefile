@@ -1,5 +1,4 @@
 require "rosumi"
-require "pry"
 
 CREDENTIALS_FILE = File.join(File.dirname(__FILE__), 'credentials.yml')
 @@username = data['email']
