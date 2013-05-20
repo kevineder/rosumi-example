@@ -1,7 +1,8 @@
 require "rosumi"
-require "pry"
+require "yaml"
 
 CREDENTIALS_FILE = File.join(File.dirname(__FILE__), 'credentials.yml')
+data = YAML.load_file(CREDENTIALS_FILE)
 @@username = data['email']
 @@password = data['password']
 @@rosumi = Rosumi.new @@username, @@password
